@@ -4,7 +4,8 @@
 - `ARCHITECTURE.md` - architecture note
 - `AI_WORKFLOW.md` - AI workflow note
 - `video.txt` - walkthrough video link
-- Live URL: (ADD YOUR DEPLOYED LINK)
+- Live URL: https://ajaija.onrender.com/
+- the free server may take 50 seconds to wake up
 - Test users: alice, bob, carol (pick from the dropdown, no password)
 
 **Working:** documents, formatting, rename, autosave, upload (.txt/.md), sharing, persistence, tests.
