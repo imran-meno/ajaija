@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ajaia Docs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <strong>Ajaia Docs</strong>
+    <label>Signed in as
+      <select id="userSelect"></select>
+    </label>
+  </header>
+
+  <div class="layout">
+    <aside>
+      <button id="newBtn" class="primary">New document</button>
+      <label class="upload">Upload .txt or .md
+        <input type="file" id="fileInput" accept=".txt,.md">
+      </label>
+      <h3>My documents</h3>
+      <ul id="myList"></ul>
+      <h3>Shared with me</h3>
+      <ul id="sharedList"></ul>
+    </aside>
+
+    <main>
+      <div id="message" role="status"></div>
+      <div id="emptyState">Create a document or pick one from the list.</div>
+      <div id="editorArea" hidden>
+        <input id="titleInput" aria-label="Document title" maxlength="100">
+        <div class="toolbar">
+          <button data-cmd="bold"><b>B</b></button>
+          <button data-cmd="italic"><i>I</i></button>
+          <button data-cmd="underline"><u>U</u></button>
+          <button data-cmd="formatBlock" data-val="h1">Heading</button>
+          <button data-cmd="formatBlock" data-val="h2">Subheading</button>
+          <button data-cmd="formatBlock" data-val="p">Text</button>
+          <button data-cmd="insertUnorderedList">Bullets</button>
+          <button data-cmd="insertOrderedList">Numbers</button>
+          <span class="spacer"></span>
+          <span id="saveStatus"></span>
+          <button id="saveBtn" class="primary">Save</button>
+        </div>
+        <div id="editor" contenteditable="true"></div>
+        <div id="shareBox">
+          <label>Share with
+            <select id="shareSelect"></select>
+          </label>
+          <button id="shareBtn">Share</button>
+          <span id="shareInfo"></span>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

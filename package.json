@@ -1,0 +1,13 @@
+{
+  "name": "ajaia-docs",
+  "version": "1.0.0",
+  "description": "Small collaborative document editor (Ajaia assignment)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test test/sharing.test.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
